@@ -31,6 +31,7 @@ export async function POST(request: Request): Promise<NextResponse> {
                 const payload = tokenPayload ? JSON.parse(tokenPayload) : null
                 const userId = payload?.userId;
 
+                // TODO: PostHog
             }
         });
 
