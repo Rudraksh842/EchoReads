@@ -4,6 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   variable: "--font-ibm-plex-serif",
@@ -21,7 +22,7 @@ const monaSans = Mona_Sans({
 export const metadata: Metadata = {
   title: "EchoReads",
   description:
-    "Transform your books into AI-powered conversations. Upload PDFs and speak with your books using voice—anytime, anywhere.",
+    "Transform your books into interactive AI conversations. Upload PDFs, and chat with your books using voice.",
 };
 
 export default function RootLayout({
@@ -37,6 +38,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="wrapper pt-28 mb-10 md:mb-16">
+    <section className="wrapper mb-10 md:mb-16">
       <div className="library-hero-card">
         <div className="library-hero-content">
           {/* Left Part */}
@@ -12,13 +12,11 @@ const HeroSection = () => {
             <h1 className="library-hero-title text-4xl font-serif font-bold">
               Your Library
             </h1>
-
             <p className="library-hero-description">
               Turn your books into engaging AI conversations.{" "}
               <br className="hidden md:block" />
               Listen, discover, and discuss your favorite reads.
             </p>
-
             <Link
               href="/books/new"
               className="library-cta-primary mt-4 flex items-center justify-center"
